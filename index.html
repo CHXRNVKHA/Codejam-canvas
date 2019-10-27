@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Codejam-Canvas</title>
+</head>
+<body>
+  <header class="header">
+    <button class="header__menu">Menu</button>
+    <h1 class="header__main_heading">Codejam - Pallete</h1>
+    <button class="header__options">Options</button>
+  </header>
+  <main class="main_content">
+    <canvas class="canvas" id="canvas" width="512" height="512"></canvas>
+    <aside>
+      <div class="size_switcher block">
+          <div class="size_switcher_input">
+              <input type="radio" name="size_switcher" value="4x4" id="size_switcher_4x4" checked>
+              <label class="size_switcher_4x4" for="size_switcher_4x4">4x4</label>
+            </div>
+            <div class="size_switcher_input">
+              <input type="radio" name="size_switcher" value="32x32" id="size_switcher_32x32" >
+              <label class="size_switcher_32x32" for="size_switcher_32x32">32x32</label>
+            </div>
+            <div class="size_switcher_input">
+              <input type="radio" name="size_switcher" value="image" id="size_switcher_image">
+              <label class="size_switcher_image" for="size_switcher_image">Image</label>
+            </div>
+      </div>
+    </aside>
+  </main>
+  <script src="data/4x4.js"></script>
+  <script src="data/32x32.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
